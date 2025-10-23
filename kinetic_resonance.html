@@ -220,6 +220,38 @@
             background: #6b7b52;
         }
 
+        .button.purple {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+        }
+
+        .button.purple:hover {
+            background: linear-gradient(135deg, #8e44ad, #7d3c98);
+        }
+
+        .button.pink {
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+        }
+
+        .button.pink:hover {
+            background: linear-gradient(135deg, #c2185b, #ad1457);
+        }
+
+        .button.cyan {
+            background: linear-gradient(135deg, #00bcd4, #0097a7);
+        }
+
+        .button.cyan:hover {
+            background: linear-gradient(135deg, #0097a7, #00838f);
+        }
+
+        .button.yellow {
+            background: linear-gradient(135deg, #ffc107, #ffa000);
+        }
+
+        .button.yellow:hover {
+            background: linear-gradient(135deg, #ffa000, #ff8f00);
+        }
+
         .button-row {
             display: flex;
             gap: 8px;
@@ -290,10 +322,10 @@
                 <h3>Seed</h3>
                 <input type="number" id="seed-input" class="seed-input" value="12345" onchange="updateSeed()">
                 <div class="seed-controls">
-                    <button class="button secondary" onclick="previousSeed()">← Prev</button>
-                    <button class="button secondary" onclick="nextSeed()">Next →</button>
+                    <button class="button pink" onclick="previousSeed()">← Prev</button>
+                    <button class="button cyan" onclick="nextSeed()">Next →</button>
                 </div>
-                <button class="button tertiary regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
+                <button class="button purple regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
             </div>
 
             <!-- Parameters Section -->
@@ -359,7 +391,7 @@
             <div class="control-section">
                 <h3>Actions</h3>
                 <div class="button-row">
-                    <button class="button" onclick="resetParameters()">Reset</button>
+                    <button class="button yellow" onclick="resetParameters()">Reset</button>
                 </div>
             </div>
         </div>

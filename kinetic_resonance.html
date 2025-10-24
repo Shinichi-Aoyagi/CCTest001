@@ -244,6 +244,14 @@
             background: linear-gradient(135deg, #0097a7, #00838f);
         }
 
+        .button.blue {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+        }
+
+        .button.blue:hover {
+            background: linear-gradient(135deg, #1976d2, #1565c0);
+        }
+
         .button.yellow {
             background: linear-gradient(135deg, #ffc107, #ffa000);
         }
@@ -322,7 +330,7 @@
                 <h3>Seed</h3>
                 <input type="number" id="seed-input" class="seed-input" value="12345" onchange="updateSeed()">
                 <div class="seed-controls">
-                    <button class="button pink" onclick="previousSeed()">← Prev</button>
+                    <button class="button blue" onclick="previousSeed()">← Prev</button>
                     <button class="button cyan" onclick="nextSeed()">Next →</button>
                 </div>
                 <button class="button purple regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
